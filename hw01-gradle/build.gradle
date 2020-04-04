@@ -9,8 +9,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 
 dependencies {
     implementation 'com.google.guava:guava'
-    implementation 'junit:junit'
-
+    testImplementation('junit:junit')
 }
 
 shadowJar {
