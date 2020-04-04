@@ -10,6 +10,6 @@ public class App {
         return "Hello world.";
     }
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        System.out.println(Strings.repeat(new App().getGreeting(), 3));
     }
 }
