@@ -21,6 +21,7 @@ allprojects {
             }
             dependency("com.google.guava:guava:28.2-jre")
             dependency("junit:junit:4.12")
+            dependency("org.assertj:assertj-core:3.11.1")
         }
     }
 
