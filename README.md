@@ -1,4 +1,4 @@
-**Otus Java Course** 
+**Otus Java Course**  
 
 Студент: 
 
