@@ -1,0 +1,14 @@
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    implementation 'com.google.guava:guava'
+    testImplementation('junit:junit')
+    testImplementation('org.assertj:assertj-core')
+}
+
