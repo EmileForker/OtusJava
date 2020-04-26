@@ -39,21 +39,14 @@ public class DIYArrayList<T> implements List<T> {
 
     @Override
     public void clear() {
-<<<<<<< HEAD
         throw new UnsupportedOperationException();
-=======
->>>>>>> d5ea9b9a361e51032aa0c88f768aef65cdf0926c
     }
 
     @Override
     public T get(int index) {
-<<<<<<< HEAD
         if (index < 0 || index >= size()) {
             throw new IndexOutOfBoundsException();
         }
-=======
-        if (index < 0 || index >= size()) throw new ArrayIndexOutOfBoundsException();
->>>>>>> d5ea9b9a361e51032aa0c88f768aef65cdf0926c
         return (T) items[index];
     }
 
@@ -69,11 +62,7 @@ public class DIYArrayList<T> implements List<T> {
 
     @Override
     public T remove(int index) {
-<<<<<<< HEAD
         throw new UnsupportedOperationException();
-=======
-        return null;
->>>>>>> d5ea9b9a361e51032aa0c88f768aef65cdf0926c
     }
 
     @Override
@@ -82,11 +71,7 @@ public class DIYArrayList<T> implements List<T> {
     }
 
     private void increaseListSize() {
-<<<<<<< HEAD
         this.items = Arrays.copyOf(items, items.length * MULTIPLIER);
-=======
-        this.items = Arrays.copyOf(items, items.length * INCREASE_STEP);
->>>>>>> d5ea9b9a361e51032aa0c88f768aef65cdf0926c
     }
 
     @Override
