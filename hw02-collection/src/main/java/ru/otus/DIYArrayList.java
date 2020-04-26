@@ -15,8 +15,7 @@ public class DIYArrayList<T> implements List<T> {
 
     // create with defined cap
     public DIYArrayList(int capacity) {
-        this.items = new Object[size];
-        size = capacity;
+        this.items = new Object[capacity];
     }
 
     @Override
