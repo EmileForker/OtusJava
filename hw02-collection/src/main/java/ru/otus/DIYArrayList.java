@@ -39,11 +39,14 @@ public class DIYArrayList<T> implements List<T> {
 
     @Override
     public void clear() {
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public T get(int index) {
-        if (index < 0 || index >= size()) throw new ArrayIndexOutOfBoundsException();
+        if (index < 0 || index >= size()) {
+            throw new IndexOutOfBoundsException();
+        }
         return (T) items[index];
     }
 
@@ -59,7 +62,7 @@ public class DIYArrayList<T> implements List<T> {
 
     @Override
     public T remove(int index) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     @Override
