@@ -4,7 +4,7 @@ import java.util.*;
 
 public class DIYArrayList<T> implements List<T> {
     private final static int DEFAULT_CAPACITY = 10;
-    private final static int INCREASE_STEP = 2;
+    private final static int MULTIPLIER = 2;
     private int size = 0;
     private Object[] items;
 
@@ -68,7 +68,7 @@ public class DIYArrayList<T> implements List<T> {
     }
 
     private void increaseListSize() {
-        this.items = Arrays.copyOf(items, items.length * INCREASE_STEP);
+        this.items = Arrays.copyOf(items, items.length * MULTIPLIER);
     }
 
     @Override
